@@ -1,16 +1,12 @@
 # SDCC Joystick MSX ROM Functions Library
 
-Version: 1.2
-
-Author: mvac7/303bcn
+Author: mvac7 [mvac7303b@gmail.com]
 
 Architecture: MSX
 
 Format: C Object (SDCC .rel)
 
 Programming language: C and Z80 assembler
- 
-mail: mvac7303b@gmail.com
 
 
 
