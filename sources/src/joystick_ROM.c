@@ -1,27 +1,24 @@
 /* =============================================================================
-  SDCC MSX ROM JOYSTICK Functions Library (object type)
-  Version: 1.2
-  Author: mvac7/303bcn
-  Architecture: MSX
-  Format: C Object (SDCC .rel)
-  Programming language: C
-  WEB: 
-  mail: mvac7303b@gmail.com
+   SDCC JOYSTICK MSX ROM Functions Library (object type)
+   Version: 1.2 (11/03/2018)
+   Author: mvac7/303bcn
+   Architecture: MSX
+   Format: C Object (SDCC .rel)
+   Programming language: C and Z80 assembler
+   mail: mvac7303b@gmail.com
 
-  Description:
-    Opensource library with functions to access to joysticks or keyboard 
-    cursors keys. 
+   Description:
+     Open Source library with basic functions for reading joystick controllers 
+     or cursor keys of MSX computers. 
     
-  History of versions:
-    v1.2 (11/03/2018) current version
-    v1.1 (03/03/2017) 
-    v1.0 (01/02/2016)
-
+   History of versions:
+     v1.2 (11/03/2018) current version
+     v1.1 (03/03/2017) 
+     v1.0 (01/02/2016)
 ============================================================================= */
 
 
 #include "../include/joystick.h"
-
 //#include "../include/msxsystemvars.h"
 #include "../include/msxBIOS.h"
 
@@ -93,11 +90,7 @@ __asm
   ld   A,4(IX)
 
   call GTTRIG
-;  or   A
-;  jr   Z,retTRIG
-;  ld   A,#1
-  
-retTRIG:    
+    
   ld   L,A
   
   pop  IX
