@@ -1,17 +1,15 @@
 # SDCC Joystick MSX ROM Functions Library
 
+```
 Author: mvac7 [mvac7303b@gmail.com]
-
 Architecture: MSX
-
 Format: C Object (SDCC .rel)
-
 Programming language: C and Z80 assembler
+```
 
 
 
-
-## 1. Introduction
+## Introduction
 
 This project is an Open Source library with basic functions for reading joystick controllers or cursor keys of MSX computers.
 
@@ -21,9 +19,10 @@ Use them for developing MSX applications using Small Device C Compiler (SDCC) co
 
 Includes two applications for test and learning purposes.
 
+![TEST2](https://user-images.githubusercontent.com/5410950/101158049-63c0b780-362b-11eb-9f41-49ba2e8ceb13.png)
 
 
-## 2. Acknowledgments
+## Acknowledgments
   
 Thanks for Info & help, to:
 
@@ -42,14 +41,57 @@ Thanks for Info & help, to:
 
 
 
-## 3. Requirements
+## Requirements
 
 * Small Device C Compiler (SDCC) v3.9 http://sdcc.sourceforge.net/
 * Hex2bin v2.5 http://hex2bin.sourceforge.net/ 
 
 
 
-## 4. Functions
+## Functions
 
 * char STICK(char joy) - Returns the joystick status.
 * signed char STRIG(char joy) - Returns the trigger status.
+ 
+ 
+## About mvac7 SDCC Libraries
+
+I have developed a series of libraries for the community of MSX computer users. 
+They are Open Source, so you can use them in your C developments with the SDCC 
+compiler. 
+
+You can improve them, cut them and transform them to other compilers, for your 
+personal projects or you can share them with the community. 
+
+The choice is yours.
+
+### For develop MSX ROMs:
+
+- SDCC C MSX 8/16K 8000h ROM startup file (CRT) --> https://github.com/mvac7/SDCC_startup_MSX816kROM8000
+- SDCC C MSX 8/16K 4000h ROM startup file (CRT) --> https://github.com/mvac7/SDCC_startup_MSX816kROM4000
+- SDCC C MSX 32K 4000h ROM startup file (CRT) --> https://github.com/mvac7/SDCC_startup_MSX32kROM4000
+- SDCC Joystick MSX ROM Functions Library --> https://github.com/mvac7/SDCC_JOYSTICK_MSXROM_Lib
+- SDCC Keyboard MSX ROM Functions Library --> https://github.com/mvac7/SDCC_KEYBOARD_MSXROM_Lib
+- SDCC TEXTMODE MSX ROM Functions Library --> https://github.com/mvac7/SDCC_TEXTMODE_MSXROM_Lib
+- SDCC VDP TMS9918A MSX ROM Functions Library --> https://github.com/mvac7/SDCC_VDP_TMS9918A_MSXROM_Lib
+- SDCC SPRITES MSX ROM Functions Library --> https://github.com/mvac7/SDCC_VDP_SPRITES_MSXROM_Lib
+- SDCC SPRITES 12 MSX ROM Functions Library --> https://github.com/mvac7/SDCC_VDP_SPRITES_12_MSXROM_Lib
+- SDCC SPRITES Small MSX ROM Functions Library --> https://github.com/mvac7/SDCC_VDP_SPRITES_S_MSXROM_Lib
+
+### For develop MSX-DOS applications:
+
+- SDCC Keyboard MSX-DOS Functions Library --> https://github.com/mvac7/SDCC_KEYBOARD_MSXDOS_Lib
+- SDCC Joystick MSX-DOS Functions Library --> https://github.com/mvac7/SDCC_JOYSTICK_MSXDOS_Lib
+- SDCC TEXTMODE MSX-DOS Functions Library --> https://github.com/mvac7/SDCC_TEXTMODE_MSXDOS_Lib
+
+### For develop MSX-DOS and ROMs applications:
+
+- SDCC PSG AY-3-8910 Functions Library --> https://github.com/mvac7/SDCC_AY38910_Lib
+- SDCC PSG AY-3-8910 playFX Functions Library --> https://github.com/mvac7/SDCC_AY38910_playFX_Lib
+- SDCC VDP VPRINT Functions Library --> https://github.com/mvac7/SDCC_VDP_VPRINT_Lib
+- SDCC VDP SPRITES Functions Library --> https://github.com/mvac7/SDCC_VDP_SPRITES_Lib
+- SDCC MSX Z80 Memory Functions Library --> https://github.com/mvac7/SDCC_MEMORY_MSX_Lib
+- SDCC String BASICs Functions Library --> https://github.com/mvac7/SDCC_STRING_B_Lib
+- SDCC PT3 Player Library for MSX --> https://github.com/mvac7/SDCC_PT3player
+- SDCC WYZ Player Library for MSX --> https://github.com/mvac7/SDCC_WYZplayer
+- Z80 RLEWB for SDCC & Assembler --> https://github.com/mvac7/Z80_RLEWB
