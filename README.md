@@ -50,8 +50,8 @@ Thanks for Info & help, to:
 
 ## Functions
 
-* char STICK(char joy) - Returns the joystick status.
-* signed char STRIG(char joy) - Returns the trigger status.
+* char **STICK**(char joy) - Returns the joystick status.
+* signed char **STRIG**(char joy) - Returns the trigger status.
  
  
 ## About mvac7 SDCC Libraries
@@ -67,10 +67,10 @@ The choice is yours.
 
 ### For develop MSX ROMs:
 
-- SDCC C MSX 8/16K 8000h ROM startup file (CRT) [Go to github project](https://github.com/mvac7/SDCC_startup_MSX816kROM8000)
+- SDCC C MSX 8/16K 8000h ROM startup file (CRT) [(gitHub project)](https://github.com/mvac7/SDCC_startup_MSX816kROM8000)
 - SDCC C MSX 8/16K 4000h ROM startup file (CRT) [Go to github project](https://github.com/mvac7/SDCC_startup_MSX816kROM4000)
 - SDCC C MSX 32K 4000h ROM startup file (CRT) [Go to github project](https://github.com/mvac7/SDCC_startup_MSX32kROM4000)
-- SDCC Joystick MSX ROM Functions Library - Basic functions for reading Joystick controllers or Cursor Keys [Go to github project](https://github.com/mvac7/SDCC_JOYSTICK_MSXROM_Lib)
+- SDCC Joystick MSX ROM Functions Library - _Basic functions for reading Joystick controllers or Cursor Keys_ [(gitHub project)](https://github.com/mvac7/SDCC_JOYSTICK_MSXROM_Lib)
 - SDCC Keyboard MSX ROM Functions Library [Go to github project](https://github.com/mvac7/SDCC_KEYBOARD_MSXROM_Lib)
 - SDCC TEXTMODE MSX ROM Functions Library [Go to github project](https://github.com/mvac7/SDCC_TEXTMODE_MSXROM_Lib)
 - SDCC VDP TMS9918A MSX ROM Functions Library [Go to github project](https://github.com/mvac7/SDCC_VDP_TMS9918A_MSXROM_Lib)
