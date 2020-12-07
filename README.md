@@ -1,4 +1,4 @@
-# Joystick MSX ROM fR3E_SX SDCC Library
+# Joystick MSX ROM fR3eDev_SX SDCC Library
 
 ```
 Author: mvac7 [mvac7303b@gmail.com]
@@ -54,7 +54,7 @@ Thanks for Info & help, to:
 * signed char **STRIG**(char joy) - Returns the trigger status.
  
  
-# About fR3E_SX SDCC Libraries
+# About fR3eDev_SX SDCC Libraries
 
 I have developed a series of libraries for the community of MSX computer users. 
 They are Open Source, so you can use them in your C developments with the SDCC compiler.
