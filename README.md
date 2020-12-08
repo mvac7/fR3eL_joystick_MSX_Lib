@@ -53,10 +53,13 @@ Thanks for Info & help, to:
 * char **STICK**(char joy) - Returns the joystick status.
 * signed char **STRIG**(char joy) - Returns the trigger status.
  
+
+
+
  
 # About fR3eDev_SX SDCC Libraries
 
-I have developed a series of libraries for the community of MSX computer users. 
+I have developed a series of libraries for the community of MSX computer developers. 
 They are Open Source, so you can use them in your C developments with the SDCC compiler.
 
 They are published as independent objects instead of a library, so that it is more versatile and you can include those that fit the needs of your project. 
@@ -73,7 +76,7 @@ You can use it freely, but keep in mind that there are better and more complete 
 
 They are divided into three groups, since in some cases they have been developed to work in specific execution environments: ROMs or MSX-DOS.
 
-## For develop MSX ROMs:
+## To develop MSX ROMs:
 
 - **MSX 8/16K 8000h ROM startup file (CRT)** [(gitHub project)](https://github.com/mvac7/SDCC_startup_MSX816kROM8000)
 - **MSX 8/16K 4000h ROM startup file (CRT)** [(gitHub project)](https://github.com/mvac7/SDCC_startup_MSX816kROM4000)
@@ -87,14 +90,14 @@ They are divided into three groups, since in some cases they have been developed
 - **SPRITES Small MSX ROM Library** - _Functions for the initialization of Sprites and the PUTSPRITE function._ [(gitHub project)](https://github.com/mvac7/SDCC_VDP_SPRITES_S_MSXROM_Lib)
 
 
-## For develop MSX-DOS applications (.COM):
+## To develop MSX-DOS applications (.COM):
 
 - **Keyboard MSX-DOS Library** - _Functions for reading the keyboard of MSX computers._ [(gitHub project)](https://github.com/mvac7/SDCC_KEYBOARD_MSXDOS_Lib)
 - **Joystick MSX-DOS Library** - _Basic functions for reading Joystick controllers or Cursor Keys._ [(gitHub project)](https://github.com/mvac7/SDCC_JOYSTICK_MSXDOS_Lib)
 - **Textmode MSX-DOS Library** - _Functions for starting and printing in text modes._ [(gitHub project)](https://github.com/mvac7/SDCC_TEXTMODE_MSXDOS_Lib)
 
 
-## For develop MSX-DOS and ROMs applications:
+## To develop anything:
 
 - **MSX Z80 Memory Library** - _Basic functions for Z80's memory and page slots/sublots access._ [(gitHub project)](https://github.com/mvac7/SDCC_MEMORY_MSX_Lib)
 - **VDP TMS9918A Library** - _Functions to work with the TMS9918A without using the MSX BIOS._ [(gitHub project)](https://github.com/mvac7/SDCC_VDP_TMS9918A_Lib) 
