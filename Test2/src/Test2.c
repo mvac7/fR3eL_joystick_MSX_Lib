@@ -6,10 +6,10 @@
 ============================================================================= */
 
 #include "../include/newTypes.h"
-#include "../include/msxsystemvars.h"
+#include "../include/msxSystemVars.h"
 #include "../include/msxBIOS.h"
 
-#include "../include/VDP_TMS9918.h"
+#include "../include/VDP_TMS9918A.h"
 #include "../include/vprint.h"
 #include "../include/memory.h"
 #include "../include/joystick.h"

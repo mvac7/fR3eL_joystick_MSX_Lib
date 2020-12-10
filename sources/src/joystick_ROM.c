@@ -1,11 +1,10 @@
 /* =============================================================================
-   SDCC JOYSTICK MSX ROM Functions Library (object type)
+   Joystick MSX ROM SDCC Library (fR3eL)
    Version: 1.2 (11/03/2018)
-   Author: mvac7/303bcn
+   Author: mvac7
    Architecture: MSX
    Format: C Object (SDCC .rel)
    Programming language: C and Z80 assembler
-   mail: mvac7303b@gmail.com
 
    Description:
      Open Source library with basic functions for reading joystick controllers 
@@ -19,7 +18,6 @@
 
 
 #include "../include/joystick.h"
-//#include "../include/msxsystemvars.h"
 #include "../include/msxBIOS.h"
 
 

@@ -14,7 +14,7 @@
 #include "../include/memory.h"
 #include "../include/textmode.h"
 #include "../include/joystick.h"
-#include "../include/msxsystemvars.h"
+#include "../include/msxSystemVars.h"
 #include "../include/msxBIOS.h"
 
 
