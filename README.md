@@ -17,7 +17,7 @@ It uses the functions from the MSX BIOS, so it is designed to create application
   
 Use them for developing MSX applications using Small Device C Compiler (SDCC) compilator.
 
-Two applications are included in the source code for testing and learning purposes.
+In the source code (\examples), two applications are included for testing and learning purposes.
 
 ![TEST2](https://user-images.githubusercontent.com/5410950/101158049-63c0b780-362b-11eb-9f41-49ba2e8ceb13.png)
 
@@ -50,6 +50,7 @@ I want to give a special thanks to all those who freely share their knowledge wi
 * Marq/Lieves!Tuore > [Marq](http://www.kameli.net/marq/) [Lieves!Tuore](http://www.kameli.net/lt/)
 * [Fubukimaru](https://github.com/Fubukimaru) > [Blog](http://www.gamerachan.org/fubu/)
 * Andrear > [Blog](http://andrear.altervista.org/home/msxsoftware.php)
+* Ramones > [MSXblog](https://www.msxblog.es/tutoriales-de-programacion-en-ensamblador-ramones/) - [MSXbanzai](http://msxbanzai.tni.nl/dev/faq.html)
 * Sapphire/Z80ST > [WEB](http://z80st.auic.es/)
 * Fernando García > [youTube](https://www.youtube.com/user/bitvision)
 * Eric Boez > [gitHub](https://github.com/ericb59)
