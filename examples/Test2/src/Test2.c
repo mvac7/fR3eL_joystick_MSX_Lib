@@ -212,27 +212,27 @@ void test()
     A = STICK(CURSORKEYS);
     printDIR(3,8,A);
     
-    if (STRIG(SPACEBAR)==PRESSED) VPRINT(10,10,"~~~~~");
+    if (STRIG(KEYBOARD_BUTTON)==BUTTON_PRESSED) VPRINT(10,10,"~~~~~");
     else VPRINT(10,10,"     "); 
     
     //Joy A
-    A = STICK(JOYA);
+    A = STICK(JOYSTICKA);
     printDIR(3,17,A);
 
-    if (STRIG(JOYA_BUTTONA)==PRESSED) VPRINT(10,19,"~");
+    if (STRIG(JOYSTICKA_BUTTONA)==BUTTON_PRESSED) VPRINT(10,19,"~");
     else VPRINT(10,19," ");
 
-    if (STRIG(JOYA_BUTTONB)==PRESSED) VPRINT(13,19,"~");
+    if (STRIG(JOYSTICKA_BUTTONB)==BUTTON_PRESSED) VPRINT(13,19,"~");
     else VPRINT(13,19," ");
     
     //Joy B
-    A = STICK(JOYB);
+    A = STICK(JOYSTICKB);
     printDIR(18,17,A);      
 
-    if (STRIG(JOYB_BUTTONA)<0) VPRINT(25,19,"~");
+    if (STRIG(JOYSTICKB_BUTTONA)<0) VPRINT(25,19,"~");
     else VPRINT(25,19," ");
 
-    if (STRIG(JOYB_BUTTONB)<0) VPRINT(28,19,"~");
+    if (STRIG(JOYSTICKB_BUTTONB)<0) VPRINT(28,19,"~");
     else VPRINT(28,19," ");
     
   }
@@ -247,38 +247,39 @@ void printDIR(byte x, byte y, char A)
   char left[]=" ";
   char right[]=" ";
   
-  switch (A) 
-  {
-    case INACTIVE:
-      break;
-    case UP:
-      up[0]=126;  
-      break;
-    case UP_RIGHT:
-      up[0]=126;
-      right[0]=126;   
-      break;
-    case RIGHT:
-      right[0]=126;   
-      break;
-    case DOWN_RIGHT:
-      down[0]=126;
-      right[0]=126;   
-      break;
-    case DOWN:
-      down[0]=126;  
-      break;
-    case DOWN_LEFT:
-      down[0]=126;
-      left[0]=126;   
-      break;
-    case LEFT:
-      left[0]=126;
-      break;
-    case UP_LEFT:
-      up[0]=126;
-      left[0]=126;  
-      break;
+  if (A!=JOYSTICK_INACTIVE)
+  {  
+    switch (A) 
+    {
+      case JOYSTICK_UP:
+        up[0]=126;  
+        break;
+      case JOYSTICK_UP_RIGHT:
+        up[0]=126;
+        right[0]=126;   
+        break;
+      case JOYSTICK_RIGHT:
+        right[0]=126;   
+        break;
+      case JOYSTICK_DOWN_RIGHT:
+        down[0]=126;
+        right[0]=126;   
+        break;
+      case JOYSTICK_DOWN:
+        down[0]=126;  
+        break;
+      case JOYSTICK_DOWN_LEFT:
+        down[0]=126;
+        left[0]=126;   
+        break;
+      case JOYSTICK_LEFT:
+        left[0]=126;
+        break;
+      case JOYSTICK_UP_LEFT:
+        up[0]=126;
+        left[0]=126;  
+        break;
+    }
   }
   
   VPRINT(x+2,y,up);//up

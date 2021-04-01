@@ -103,39 +103,39 @@ void test()
     HALT;
     
     //------------------------- cursor keys
-    dir = STICK(0);
+    dir = STICK(CURSORKEYS);
     LOCATE(14,8);
     PrintFNumber(dir,32,2);
     
-    button=STRIG(0);
+    button=STRIG(KEYBOARD_BUTTON);
     LOCATE(14,9);
     printTrig(button);
 
       
     //------------------------- joy1
-    dir = STICK(1);
+    dir = STICK(JOYSTICKA);
     LOCATE(14,12);
     PrintFNumber(dir,32,2);
     
-    button=STRIG(1);
+    button=STRIG(JOYSTICKA_BUTTONA);
     LOCATE(14,13);
     printTrig(button);
     
-    button=STRIG(3);
+    button=STRIG(JOYSTICKA_BUTTONB);
     LOCATE(14,14);
     printTrig(button); 
 
     
     //------------------------- joy2
-    dir = STICK(2);
+    dir = STICK(JOYSTICKB);
     LOCATE(14,17);
     PrintFNumber(dir,32,2);    
        
-    button=STRIG(2);
+    button=STRIG(JOYSTICKB_BUTTONA);
     LOCATE(14,18);
     printTrig(button);
     
-    button=STRIG(4);
+    button=STRIG(JOYSTICKB_BUTTONB);
     LOCATE(14,19);
     printTrig(button); 
 
