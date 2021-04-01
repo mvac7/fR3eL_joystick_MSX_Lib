@@ -60,6 +60,7 @@ I want to give a special thanks to all those who freely share their knowledge wi
 
 ### Joystick type
 
+-- | --
 CURSORKEYS | 0
 JOYSTICKA | 1
 JOYSTICKB | 2
@@ -67,6 +68,7 @@ JOYSTICKB | 2
 
 ### Joystick state
 
+-- | --
 JOYSTICK_INACTIVE | 0
 JOYSTICK_UP | 1
 JOYSTICK_UP_RIGHT | 2
@@ -80,6 +82,7 @@ JOYSTICK_UP_LEFT | 8
 
 ### Trigger type
 
+-- | --
 SPACEBAR_BUTTON | 0
 KEYBOARD_BUTTON | 0
 JOYSTICKA_BUTTONA | 1
@@ -90,6 +93,7 @@ JOYSTICKB_BUTTONB | 4
 
 ### Trigger state
 
+-- | --
 BUTTON_UNPRESSED | 0
 BUTTON_PRESSED | -1
 
@@ -102,7 +106,7 @@ BUTTON_PRESSED | -1
 
 Returns the joystick status.
 
-~~char STICK(char joy)~~
+`char STICK(char joy)`
 
 
 #### Input
@@ -114,6 +118,7 @@ Returns the joystick status.
 
 [char] status value 
 
+-- | --
 0 | inactive
 1 | up
 2 | up & right
@@ -160,12 +165,13 @@ if (joyval!=JOYSTICK_INACTIVE){
 
 Returns the trigger status.
 
-~~signed char STRIG(char joy)~~
+`signed char STRIG(char joy)`
 
 #### Input
 
 [char] cursor/joystick button identifier 
- 
+
+-- | -- 
 0 | space key
 1 | button 1 joy A
 2 | button 1 joy B
@@ -177,6 +183,7 @@ Returns the trigger status.
 
 [signed char] status value 
 
+-- | --
  0 | inactive
 -1 | when the space key or the joystick/mouse button is pressed down 
 
