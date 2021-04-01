@@ -56,11 +56,13 @@ I want to give a special thanks to all those who freely share their knowledge wi
 * Meisei emulator >> ?
 
 
-## Constants
+
+## Definitions
 
 ### Joystick type
 
--- | --
+Label | value
+----- | -----
 CURSORKEYS | 0
 JOYSTICKA | 1
 JOYSTICKB | 2
@@ -68,7 +70,8 @@ JOYSTICKB | 2
 
 ### Joystick state
 
--- | --
+Label | value
+----- | -----
 JOYSTICK_INACTIVE | 0
 JOYSTICK_UP | 1
 JOYSTICK_UP_RIGHT | 2
@@ -82,7 +85,8 @@ JOYSTICK_UP_LEFT | 8
 
 ### Trigger type
 
--- | --
+Label | value
+----- | -----
 SPACEBAR_BUTTON | 0
 KEYBOARD_BUTTON | 0
 JOYSTICKA_BUTTONA | 1
@@ -93,7 +97,8 @@ JOYSTICKB_BUTTONB | 4
 
 ### Trigger state
 
--- | --
+Label | value
+----- | -----
 BUTTON_UNPRESSED | 0
 BUTTON_PRESSED | -1
 
@@ -116,9 +121,10 @@ Returns the joystick status.
 
 #### Output 
 
-[char] status value 
+[char] state value 
 
--- | --
+value | state
+----- | -----
 0 | inactive
 1 | up
 2 | up & right
@@ -171,7 +177,8 @@ Returns the trigger status.
 
 [char] cursor/joystick button identifier 
 
--- | -- 
+value | button
+----- | ------
 0 | space key
 1 | button 1 joy A
 2 | button 1 joy B
@@ -183,7 +190,8 @@ Returns the trigger status.
 
 [signed char] status value 
 
--- | --
+value | description
+----- | -----------
  0 | inactive
 -1 | when the space key or the joystick/mouse button is pressed down 
 
