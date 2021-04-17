@@ -41,7 +41,7 @@ STICK
                   7=left
                   8=up & left 
 ============================================================================= */
-char STICK(char joy)
+char STICK(char joy) __naked
 {
 joy;
 __asm
@@ -55,7 +55,8 @@ __asm
    
   ld   L,A
   
-  pop  IX  
+  pop  IX
+  ret  
 __endasm;
 }
 
@@ -77,7 +78,7 @@ __endasm;
                    -1 = when the space key or the joystick/mouse button is 
                         pressed down 
 ============================================================================= */
-signed char STRIG(char joy)
+signed char STRIG(char joy) __naked
 {
 joy;
 __asm
@@ -92,6 +93,7 @@ __asm
   ld   L,A
   
   pop  IX
+  ret
 __endasm;
 }
 

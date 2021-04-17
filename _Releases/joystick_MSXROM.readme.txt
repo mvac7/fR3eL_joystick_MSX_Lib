@@ -4,7 +4,7 @@ Author: mvac7 [mvac7303b@gmail.com]
 Architecture: MSX
 Format: C Object (SDCC .rel)
 Programming language: C and Z80 assembler
-
+Source Code: https://github.com/mvac7/SDCC_JOYSTICK_MSXROM_Lib
 
 
 History of versions:
@@ -15,14 +15,13 @@ History of versions:
  
 >>> Warning!: Document pending correction. <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-
 --------------------------------------------------------------------------------
 Index:
 
 1 Introduction
 2 Requirements
 3 Acknowledgments
-4 Constants
+4 Definitions
   4.1 Joystick type
   4.2 Joystick state
   4.3 Trigger type
@@ -48,7 +47,8 @@ compilator.
 This library is part of the MSX fR3eL Project 
                                          https://github.com/mvac7/SDCC_MSX_fR3eL
 
-Includes two applications for test and learning purposes.
+In the gitHub repository you will find the sources of two applications for test 
+and learning purposes.
 - https://github.com/mvac7/SDCC_JOYSTICK_MSXROM_Lib/tree/master/Test1                           
 - https://github.com/mvac7/SDCC_JOYSTICK_MSXROM_Lib/tree/master/Test2
 
@@ -90,7 +90,7 @@ with the MSX developer community.
    
 
 --------------------------------------------------------------------------------
-4 Constants
+4 Definitions
 
 
 4.1 Joystick type

@@ -19,7 +19,7 @@ Use them for developing MSX applications using Small Device C Compiler (SDCC) co
 
 In the source code (\examples), you can find applications for testing and learning purposes.
 
-![TEST2](https://user-images.githubusercontent.com/5410950/101158049-63c0b780-362b-11eb-9f41-49ba2e8ceb13.png)
+![TEST2](https://raw.githubusercontent.com/mvac7/SDCC_JOYSTICK_MSXROM_Lib/master/examples/Test2/GFX/TEST2.png)
 
 This library is part of the [MSX fR3eL Project](https://github.com/mvac7/SDCC_MSX_fR3eL).
 
