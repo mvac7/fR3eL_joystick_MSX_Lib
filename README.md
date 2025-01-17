@@ -1,4 +1,4 @@
-# Joystick MSX ROM SDCC Library (fR3eL Project)
+# Joystick MSX SDCC Library (fR3eL Project)
 
 <table>
 <tr><td>Architecture</td><td>MSX</td></tr>
