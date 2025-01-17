@@ -1,211 +1,132 @@
 # Joystick MSX ROM SDCC Library (fR3eL Project)
 
-```
-Author: mvac7 [mvac7303b@gmail.com]
-Architecture: MSX
-Format: C Object (SDCC .rel)
-Programming language: C and Z80 assembler
-```
+<table>
+<tr><td>Architecture</td><td>MSX</td></tr>
+<tr><td>Format</td><td>C Object (SDCC .rel)</td></tr>
+<tr><td>Programming language</td><td>C and Z80 assembler</td></tr>
+<tr><td>Compiler</td><td>SDCC v4.4 or newer</td></tr>
+</table>
 
-
+---
 
 ## Description
 
-This project is an Open Source library with basic functions for reading joystick controllers or cursor keys of MSX computers.
+Library with basic functions for reading joystick controllers or cursor keys of MSX computers.
 
-It uses the functions from the MSX BIOS, so it is designed to create applications in ROM format.
-  
-Use them for developing MSX applications using Small Device C Compiler (SDCC) compilator.
+In this project you will find two libraries for different environments:
+- **joystick_MSX** Does not use the MSX BIOS. You can use it for any environment (ROM, MSX BASIC or MSX-DOS)
+- **joystick_MSXBIOS** Uses the MSX BIOS. It takes up very little memory. You can use it in ROMs from 8 to 32K or programs that run from MSX BASIC environment.
 
-In the source code (\examples), you can find applications for testing and learning purposes.
+The functions work with the same values ​​as the corresponding instructions in MSX BASIC.
 
-![TEST2](https://raw.githubusercontent.com/mvac7/SDCC_JOYSTICK_MSXROM_Lib/master/examples/Test2/GFX/TEST2.png)
+You can access the documentation here with [`How to use the library`](docs/HOWTO.md).
 
-This library is part of the [MSX fR3eL Project](https://github.com/mvac7/SDCC_MSX_fR3eL).
+These libraries are part of the [MSX fR3eL Project](https://github.com/mvac7/SDCC_MSX_fR3eL).
+
+Use them for developing MSX applications using Small Device C Compiler [`SDCC`](http://sdcc.sourceforge.net/).
+
+This project is an Open Source. 
+You can add part or all of this code in your application development or include it in other libraries/engines.
 
 Enjoy it!
 
+<br/>
 
+---
 
 ## Requirements
 
-* Small Device C Compiler (SDCC) v3.9 http://sdcc.sourceforge.net/
-* Hex2bin v2.5 http://hex2bin.sourceforge.net/ 
+- [Small Device C Compiler (SDCC) v4.4](http://sdcc.sourceforge.net/)
+- [Hex2bin v2.5](http://hex2bin.sourceforge.net/)
 
+<br/>
 
-
-## Acknowledgments
-  
-I want to give a special thanks to all those who freely share their knowledge with the MSX developer community.
-
-* Avelino Herrera > [WEB](http://msx.atlantes.org/index_es.html)
-* Nerlaska > [Blog](http://albertodehoyonebot.blogspot.com.es)
-* Marq/Lieves!Tuore > [Marq](http://www.kameli.net/marq/) [Lieves!Tuore](http://www.kameli.net/lt/)
-* Fubukimaru [gitHub](https://github.com/Fubukimaru) > [Blog](http://www.gamerachan.org/fubu/)
-* Andrear > [Blog](http://andrear.altervista.org/home/msxsoftware.php)
-* Ramones > [MSXblog](https://www.msxblog.es/tutoriales-de-programacion-en-ensamblador-ramones/) - [MSXbanzai](http://msxbanzai.tni.nl/dev/faq.html)
-* Sapphire/Z80ST > [WEB](http://z80st.auic.es/)
-* BitVision > [youTube](http://www.z80st.es/cursos/bitvision-assembler)
-* Eric Boez > [gitHub](https://github.com/ericb59)
-* MSX Assembly Page > [WEB](http://map.grauw.nl/resources/msxbios.php)
-* Portar MSX Tech Doc > [WEB](http://nocash.emubase.de/portar.htm)
-* MSX Resource Center > [WEB](http://www.msx.org/)
-* Karoshi MSX Community (RIP 2007-2020)
-* BlueMSX emulator >> [WEB](http://www.bluemsx.com/)
-* OpenMSX emulator >> [WEB](http://openmsx.sourceforge.net/)
-* Meisei emulator >> ?
-
-
-
-## Definitions
-
-### Joystick type
-
-Label | value
------ | -----
-CURSORKEYS | 0
-JOYSTICKA | 1
-JOYSTICKB | 2
-
-
-### Joystick state
-
-Label | value
------ | -----
-JOYSTICK_INACTIVE | 0
-JOYSTICK_UP | 1
-JOYSTICK_UP_RIGHT | 2
-JOYSTICK_RIGHT | 3
-JOYSTICK_DOWN_RIGHT | 4
-JOYSTICK_DOWN | 5
-JOYSTICK_DOWN_LEFT | 6
-JOYSTICK_LEFT | 7
-JOYSTICK_UP_LEFT | 8
-
-
-### Trigger type
-
-Label | value
------ | -----
-SPACEBAR_BUTTON | 0
-KEYBOARD_BUTTON | 0
-JOYSTICKA_BUTTONA | 1
-JOYSTICKB_BUTTONA | 2
-JOYSTICKA_BUTTONB | 3
-JOYSTICKB_BUTTONB | 4
-
-
-### Trigger state
-
-Label | value
------ | -----
-BUTTON_UNPRESSED | 0
-BUTTON_PRESSED | -1
-
-
+---
 
 ## Functions
 
+| Name | Declaration | Description |
+| ---  | ---   | ---         |
+| STICK | `char STICK(char joy)` | Returns the joystick status |
+| STRIG | `signed char STRIG(char triggerN)` | Returns the trigger status |
 
-### STICK
+<br/>
 
-Returns the joystick status.
+---
 
-`char STICK(char joy)`
+## Examples
 
+In the source code you can find two applications for testing and learning purposes.
 
-#### Input
+### Test 1
 
-[char] cursor/joystick device number 
+<table>
+<tr><td>Library</td><td>joystick_MSX</td></tr>
+<tr><td>Format</td><td>MSX 8K ROM</td></tr>
+</table>
 
+This application reads and displays the output from the cursor keys and the two joystick ports.
 
-#### Output 
+[Source code](examples/Test1_ROM/)
 
-[char] state value 
+![TEST1](examples/Test1_ROM/GFX/TEST1.png)
 
-value | state
------ | -----
-0 | inactive
-1 | up
-2 | up & right
-3 | right
-4 | down & right
-5 | down
-6 | down & left
-7 | left
-8 | up & left
+<br/>
 
+### Test 2
 
-#### Example
-  
-```
-char joyval;
-joyval = STICK(JOYSTICKA);
+<table>
+<tr><td>Library</td><td>joystick_MSX</td></tr>
+<tr><td>Format</td><td>.COM MSX-DOS</td></tr>
+</table>
 
-if (joyval!=JOYSTICK_INACTIVE){  
-  switch (joyval) 
-  {     
-    case JOYSTICK_UP:
-      moveUp();
-      break;
+This application shows in Log format, the pulsations of the directions of the game controllers and the cursor keys, as well as the pulsation of the fire buttons and the space key (keyboard).
 
-    case JOYSTICK_RIGHT:              
-      moveRight();
-      break;
+[Source code](examples/Test2_MSXDOS/)
 
-    case JOYSTICK_DOWN:
-      moveDown();
-      break;
+![TEST2](examples/Test2_MSXDOS/GFX/TEST2.png)
 
-    case JOYSTICK_LEFT:
-      moveDown();
-      break;   
-  }
-}
-```
+<br/>
 
+### Test 3 
 
+<table>
+<tr><td>Library</td><td>joystick_MSX</td></tr>
+<tr><td>Format</td><td>.COM MSX-DOS</td></tr>
+</table>
 
+This application shows on a graphic screen, the pulsations of the directions of the game controllers and the cursor keys, as well as the pulsation of the fire botnoes and the space key (keyboard).
 
-### STRIG
+[Source code](examples/Test3_MSXDOS/)
 
-Returns the trigger status.
+![TEST3](examples/Test3_MSXDOS/GFX/TEST3.png)
 
-`signed char STRIG(char joy)`
+<br/>
 
-#### Input
+### Test 4
 
-[char] cursor/joystick button identifier 
+<table>
+<tr><td>Library</td><td>joystick_MSXBIOS</td></tr>
+<tr><td>Format</td><td>MSX 8K ROM</td></tr>
+</table>
 
-value | button
------ | ------
-0 | space key
-1 | button 1 joy A
-2 | button 1 joy B
-3 | button 2 joy A
-4 | button 2 joy B
-                    
+This application reads and displays the output from the cursor keys and the two joystick ports. 
 
-#### Output: 
+[Source code](examples/Test4_ROM/)
 
-[signed char] status value 
+![TEST4](examples/Test4_ROM/GFX/TEST4.png)
 
-value | description
------ | -----------
- 0 | inactive
--1 | when the space key or the joystick/mouse button is pressed down 
+<br/>
 
+### Test 5
 
-#### Example
-  
-```
-signed char press;
-press = STRIG(KEYBOARD_BUTTON); //spacebar
-if (press==BUTTON_UNPRESSED) press = STRIG(JOYSTICKA_BUTTONA);
-if (press==BUTTON_PRESSED) Fire();
-```
+<table>
+<tr><td>Library</td><td>joystick_MSXBIOS</td></tr>
+<tr><td>Format</td><td>MSX 8K ROM</td></tr>
+</table>
 
+This application shows on a graphic screen, the pulsations of the directions of the game controllers and the cursor keys, as well as the pulsation of the fire botnoes and the space key (keyboard).
 
+[Source code](examples/Test5_ROM/)
 
-
-
+![TEST4](examples/Test5_ROM/GFX/TEST5.png)
