@@ -1,6 +1,8 @@
 /* =============================================================================
-Test 3 for joystick_MSX SDCC Library (fR3eL Project)
-Version: v1.0 (17/01/2025)
+Test3 
+Test joystick_MSX SDCC Library (fR3eL Project)
+
+Version: 1.0 (17/01/2025)
 Architecture: MSX
 Format: MSX-DOS .COM
 Programming language: C and Z80 assembler

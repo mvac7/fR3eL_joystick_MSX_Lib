@@ -26,7 +26,7 @@
 
 ## 1 Description
 
-Library with basic functions for reading joystick controllers or cursor keys of MSX computers.
+C function library with basic functions for reading joystick controllers or cursor keys of MSX computers.
 
 In this project you will find two libraries for different environments:
 - **joystick_MSX** Does not use the MSX BIOS. You can use it for any environment (ROM, MSX BASIC or MSX-DOS)
@@ -34,19 +34,16 @@ In this project you will find two libraries for different environments:
 
 The functions work with the same values ​​as the corresponding instructions in MSX BASIC.
 
-You will find definitions to improve the readability of the source code.
+Use them for developing MSX applications using Small Device C Compiler [`SDCC`](http://sdcc.sourceforge.net/).
 
 These libraries are part of the [MSX fR3eL Project](https://github.com/mvac7/SDCC_MSX_fR3eL).
 
-Use them for developing MSX applications using Small Device C Compiler [`SDCC`](http://sdcc.sourceforge.net/).
-
-This project is an Open Source. 
+This project is open source under the [MIT license](LICENSE).
 You can add part or all of this code in your application development or include it in other libraries/engines.
 
 <br/>
 
 ---
-
 
 ## 2 Requirements
 
@@ -59,6 +56,8 @@ You can add part or all of this code in your application development or include 
 ---
 
 ## 3 Definitions
+
+The library provides a number of definitions to help you improve the readability of your source code.
 
 ### 3.1 Device identifier
 
@@ -123,6 +122,7 @@ BUTTON_PRESSED   | -1
 <tr><th>Output</th><td><pre>char</pre></td><td>status</td></tr>
 </table>
 
+<br/> 
 
 #### Input
 
@@ -166,6 +166,7 @@ Combination | Result
 `LEFT`+`UP`+`RIGHT`   | UP
 `LEFT`+`DOWN`+`RIGHT` | DOWN
 
+<br/> 
 
 #### Example
   
@@ -196,6 +197,7 @@ Combination | Result
   }
 ```
 
+<br/> 
 
 ### 4.2 STRIG
 
@@ -207,6 +209,7 @@ Combination | Result
 <tr><th>Output</th><td><pre>signed char</pre></td><td>status</td></tr>
 </table>
 
+<br/> 
 
 #### Input
 

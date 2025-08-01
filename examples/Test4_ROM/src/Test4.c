@@ -1,6 +1,8 @@
 /* =============================================================================
-Test 4 for joystick_MSXBIOS SDCC Library (fR3eL Project)
-version: 1.2 (17/01/2025)
+Test4 
+Test joystick_MSXBIOS SDCC Library (fR3eL Project)
+
+Version: 1.2 (17/01/2025)
 Architecture: MSX
 Format: MSX 8K ROM
 Programming language: C and Z80 assembler
